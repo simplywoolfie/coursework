@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Projects</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="home.css">
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function(){
+   // Add smooth scrolling to all links
+   $("a").on('click', function(event) {
+
+     // Make sure this.hash has a value before overriding default behavior
+     if (this.hash !== "") {
+       // Prevent default anchor click behavior
+       event.preventDefault();
+
+       // Store hash
+       var hash = this.hash;
+
+       // Using jQuery's animate() method to add smooth page scroll
+       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+       $('html, body').animate({
+         scrollTop: $(hash).offset().top
+       }, 800, function(){
+
+         // Add hash (#) to URL when done scrolling (default click behavior)
+         window.location.hash = hash;
+       });
+     } // End if
+   });
+ });
+ </script>
+
+
+  </head>
+  <body>
+    <div class="test" id="top">
+      <p>.</p>
+     <a href="cv.html"><img class="right" src="RightArrow1.png" alt="Right arrow. This will lead you to cv page." width="67" height="67"></a>
+     <a href="index.html"><img class="left" src="LeftArrow1.png" alt="Left arrow. This will lead you to home page." width="67" height="67"></a>
+    <a href="#container2"><img href="#container2" class="down" src="ArrowDown.png" alt="Arrow down. Once clicked it will smooth scroll to the bottom" width="67" height="67" ></a>
+<a href="#top"><img href="#top" class="up" src="Totop.png" alt="Arrow up. Once clicked it will smooth scroll to the top" width="67" height="67" ></a>
+    <!--These are the buttons on the projects page used to navigate. Clicking left will result taking you to home page,-->
+    <!-- clicking right will take you to my cv page and clicking down aka explore will enable smooth scroll which scrolls down the page  -->
+<div class="BACK" style="position: absolute; top:1920px; right:207px; ">BACK</div>
+    <div class="Lefttext" style="position: absolute; top:465px; left:170px; ">HOME</div>
+   <div class="Righttext" style="position: absolute; top:465px; right:170px; ">CV</div>
+  <div class="explore" style="position: absolute; top:715px; right:932px; ">EXPLORE</div>
+
+<!--This is text next to the buttons which indicates where each button will take you-->
+
+  <div class="Bigheader" style="position: absolute; top:160px; left:450px; ">2017</div>
+ <div class="Smallheader" style="position: absolute; top:400px; left:670px; ">PROJECTS</div>
+
+<!--2 big texts. Projects is self explanatory, just indicates that it's the projects page, even bigger faded text behind indicates the current year. It's there so it looks better.-->
+
+ <img class="monkaS" src="Wow.jpg" alt="A character from World of Warcraft holding a wrench." width="250" height="250" >
+<img class="monkaS1" src="lol.jpg" alt="A character from League of Legends holding a wrench." width="250" height="250" >
+
+<!--This is used to add images with desired position.-->
+
+<div  id="container1" style="position: absolute; top:1400px; right:800px; " >
+<p>I have worked on a few World of Warcraft private servers, Kronos was one of them. I was assigned to be one of the testers. My job was to find various bugs and glitches.
+The most fun part of it was that I had permission to try and break the server then report on it. At the later stages of the project I was asked to scan through the code
+and spot errors if there were any. After a year the server still remains open until this day.</p>
+</div>
+
+<div id="container2" style="position: absolute; top:1800px; right:800px; " >
+<p>Riot Games were developing a new improved client for League of Legends. I have volunteered to be part of the alpha testing team. Each member of the team had different aspects to test
+within the client. I was testing the profile and store sections. I have discovered that opening up the profile page multiple times within a short period of time would crash the page
+and won't let you to open it again unless to restart the client. We as a team had limited time, approximately 3 weeks, after that the client would open up to the public to test output
+and use to their leisure. When working as a team I have gained various skills that will benefit me in the future.</p>
+</div>
+<!--2 containers to store paragraphs.-->
+
+  </body>
+</html>

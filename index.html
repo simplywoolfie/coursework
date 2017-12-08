@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <!--This links google's style sheets to have a different font that I want to use-->
+    <title>Home</title>
+     <link rel="stylesheet" type="text/css" href="home.css">
+     <!--This links my stylesheet to the homepage-->
+
+</head>
+  <body>
+<div class="test" id="top">
+  <p>.</p>
+</div>
+      <a href="projects.html"><img class="right" src="RightArrow1.png" alt="Right arrow. This will lead to projects page" width="67" height="67"></a>
+      <a href="contact.html"><img class="left" src="LeftArrow1.png" alt="Left arrow. This will lead to contact me page" width="67" height="67"></a>
+    <a href="#container2"><img href="#container2" class="down" src="ArrowDown.png" alt="Arrow down. Once clicked it will smooth scroll to the bottom" width="67" height="67" ></a>
+      <a href="#top"><img href="#top" class="up" src="Totop.png" alt="Arrow up. Once clicked it will smooth scroll to the top" width="67" height="67" ></a>
+
+<!--These are the buttons on the homepage used to navigate. Clicking left will result taking you to contact page,-->
+<!-- clicking right will take you to my projects page and clicking down aka explore will enable smooth scroll which scrolls down the page  -->
+
+   <div class="BACK" style="position: absolute; top:1920px; right:207px; ">BACK</div>
+  <div class="Lefttext" style="position: absolute; top:465px; left:170px; ">CONTACT</div>
+ <div class="Righttext" style="position: absolute; top:465px; right:170px; "  >PROJECTS</div>
+<div class="explore" style="position: absolute; top:715px; right:932px; ">EXPLORE</div>
+<!--This is text next to the buttons which indicates where each button will take you-->
+
+
+  <div class="Bigheader" style="position: absolute; top:160px; left:450px; ">2017</div>
+ <div class="Smallheader" id="home" style="position: absolute; top:400px; left:785px; ">HOME</div>
+<!--2 big texts. Home is self explanatory, just indicates that it's the home page, even bigger faded text behind indicates the current year. It's there so it looks better.-->
+<!--Yes, I know I could of done it a different way but it is what it is, don't judge :^)-->
+   <img class="monkaS" src="cybersecurity.jpg" alt="Cyber security image" width="300" height="250" >
+  <img class="monkaS1" src="cybersecurity1.jpg" alt="Cyber security image" width="300" height="250" >
+<!--This is used to add images with desired position.-->
+
+
+       <div  id="container1" style="position: absolute; top:1400px; right:800px; " >
+      <p>Welcome to my website. This website is made for my coursework. This site is very easy to navigate through, just click the buttons on the left or right, this will take
+      you to another page. The explore button will make your life easier. Clicking the explore button will automatically scroll to the bottom of the page rather than you having
+    to do it manually, once at the bottom of the page you can click the back button which will take you back to the top.
+    You can also navigate using the TAB key, it'll select a button for you and all you have to do it press enter.</p>
+     </div>
+
+    <div id="container2" style="position: absolute; top:1800px; right:800px; " >
+   <p>I've been interested in computers since I was 9. This interest has allowed me to take a career path. I have decided to study at RGU as it was one of a few universities
+   that had cyber security course, it has great and positive reviews, and also it is not far from home. In my spare time I research news within the computing industry. I am dedicated
+ to learn new things and take on many challenges to improve my skills and further enchance my employability chances in the near future.</p>
+ <br><br>
+
+</div>
+
+<!--2 containers to store paragraphs.-->
+  </body>
+</html>

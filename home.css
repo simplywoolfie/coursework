@@ -1,0 +1,266 @@
+/* Even more mess than the html page. */
+
+body {
+    background-image: url("MainBackground.jpg");
+    background-repeat: repeat-y;
+}
+
+/* ^ This is to set a background image of the website */
+
+.Smallheader {
+
+font-family: "Impact";
+font-size: 100px;
+letter-spacing: 20px;
+color: #FFFFFF;
+-webkit-text-stroke: 2px black;
+opacity: 0.9;
+}
+
+/* ^ This is used to style the text. It changes the colour, size, font, has little bit of fade, has stroke and letter spacing of 20 pixels. */
+
+.Bigheader {
+  font-family: "Impact";
+  font-size: 500px;
+  letter-spacing: 20px;
+  color: #122038;
+z-index: -1;
+  opacity: 0.5;
+}
+
+/* ^ This is used to style the text. It changes the colour, size, font, has lots of fade, has stroke and letter spacing of 20 pixels. Z-index makes it so it's behind the big "HOME text " */
+/* rather than in front of it */
+
+#container1{
+color: #FFFFFF;
+width: 20%
+}
+
+#container2{
+color: #FFFFFF;
+width: 20%
+}
+
+/* This changes the text colour of the paragraphs and makes the containers smaller */
+
+.right {
+  position: absolute;
+    right: 90px;
+    top: 450px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+/* This is the code for the right button. The code changes its positon, has it set to back so any text can be written over it, also has a cursor pointer */
+/* so when you hover over it, it counts it as a link */
+
+.left {
+  position: absolute;
+    left: 90px;
+    top: 450px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+/* This is the code for the left button. The code changes its positon, has it set to back so any text can be written over it, also has a cursor pointer */
+/* so when you hover over it, it counts it as a link */
+
+.down {
+  position: absolute;
+    right: 938px;
+    top: 750px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+/* This is the code for the explore button. The code changes its positon, has it set to back so any text can be written over it, also has a cursor pointer */
+/* so when you hover over it, it counts it as a link */
+
+.up{
+  position: absolute;
+    right: 200px;
+    top: 1850px;
+    z-index: -1;
+    cursor: pointer;
+}
+
+.monkaS{
+  position: absolute;
+    right: 500px;
+    top: 1100px;
+    z-index: -1;
+}
+
+/* Code for one of the images next to the paragraphs. It positions the image where I want it to be and also sends it to back */
+
+.monkaS1{
+  position: absolute;
+    left: 400px;
+    top: 1600px;
+    z-index: -1;
+}
+
+/* Code for one of the images next to the paragraphs. It positions the image where I want it to be and also sends it to back */
+
+.map{
+  position: absolute;
+  left: 30px;
+  top: 1500px;
+  z-index: -1;
+}
+
+/* This is the code for google maps. It places the embedded link where I want it to be within the site */
+
+.twitter{
+  position: absolute;
+  right: 30px;
+  top: 1100px;
+  z-index: -1;
+}
+
+/* This is the code for twitter. It places the embedded link where I want it to be within the site */
+
+
+
+.Righttext {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+transform: rotate(4deg);
+  color: #FFFFFF;
+
+  opacity: 0.9;
+
+}
+
+/* Code used to style "RIGHT" text next to the right button. It changes font, font size , rotates it 4 degrees, changes colour and fades it out a little bit. */
+
+.BACK{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+
+  color: #FFFFFF;
+
+  opacity: 0.9;
+}
+
+.explore {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+color: #FFFFFF;
+opacity: 0.9;
+
+}
+
+/* Code used to style "EXPLORE" text above the bottom button. It changes font, font size, changes colour and fades it out a little bit. */
+
+.Lefttext {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+transform: rotate(-4deg);
+  color: #FFFFFF;
+
+  opacity: 0.9;
+}
+
+/* Code used to style "LEFT" text next to the left button. It changes font, font size , rotates it -4 degrees, changes colour and fades it out a little bit. */
+
+.right:hover {
+
+  animation: zoomIn 0.5s;
+}
+
+/* Animation starts when the user has hovered the mouse over it. */
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+/* This is the animation for the right button. When you hover over it, it does an animation. It zooms in and zooms out instantly when the animation is finished. */
+
+.left:hover {
+
+  animation: zoomIn 0.5s;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+/* This is the animation for the left button. When you hover over it, it does an animation. It zooms in and zooms out instantly when the animation is finished. */
+
+.down:hover {
+
+  animation: zoomIn 0.5s;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+/* This is the animation for the bottom button. When you hover over it, it does an animation. It zooms in and zooms out instantly when the animation is finished. */
+
+.main {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
+
+
+.up:hover {
+
+  animation: zoomIn 0.5s;
+}
+
+/* Animation starts when the user has hovered the mouse over it. */
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+/* This is the animation for the up button. When you hover over it, it does an animation. It zooms in and zooms out instantly when the animation is finished. */

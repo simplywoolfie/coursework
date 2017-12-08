@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CV Page</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+     <link rel="stylesheet" type="text/css" href="home.css">
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <script>
+ $(document).ready(function(){
+   // Add smooth scrolling to all links
+   $("a").on('click', function(event) {
+
+     // Make sure this.hash has a value before overriding default behavior
+     if (this.hash !== "") {
+       // Prevent default anchor click behavior
+       event.preventDefault();
+
+       // Store hash
+       var hash = this.hash;
+
+       // Using jQuery's animate() method to add smooth page scroll
+       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+       $('html, body').animate({
+         scrollTop: $(hash).offset().top
+       }, 800, function(){
+
+         // Add hash (#) to URL when done scrolling (default click behavior)
+         window.location.hash = hash;
+       });
+     } // End if
+   });
+ });
+ </script>
+
+
+  </head>
+  <body>
+    <div class="test" id="top">
+      <p>.</p>
+     <a href="contact.html"><img class="right" src="RightArrow1.png" alt="Right arrow. This will lead you to contact me page." width="67" height="67"></a>
+     <a href="projects.html"><img class="left" src="LeftArrow1.png" alt="Left arrow. This will lead you to projects page." width="67" height="67"></a>
+    <a href="#container2"><img href="#container2" class="down" src="ArrowDown.png" alt="Arrow down. Once clicked it will smooth scroll to the bottom" width="67" height="67" ></a>
+<a href="#top"><img href="#top" class="up" src="Totop.png" alt="Arrow up. Once clicked it will smooth scroll to the top" width="67" height="67" ></a>
+    <!--These are the buttons on the cv page used to navigate. Clicking left will result taking you to projects page,-->
+    <!-- clicking right will take you to my contact page and clicking down aka explore will enable smooth scroll which scrolls down the page  -->
+<div class="BACK" style="position: absolute; top:1920px; right:207px; ">BACK</div>
+    <div class="Lefttext" style="position: absolute; top:465px; left:170px; ">PROJECTS</div>
+   <div class="Righttext" style="position: absolute; top:465px; right:170px; ">CONTACT</div>
+  <div class="explore" style="position: absolute; top:715px; right:932px; ">EXPLORE</div>
+
+<!--This is text next to the buttons which indicates where each button will take you-->
+
+  <div class="Bigheader" style="position: absolute; top:160px; left:450px; ">2017</div>
+ <div class="Smallheader" style="position: absolute; top:400px; right:890px; ">CV</div>
+
+<!--2 big texts. Cv is self explanatory, just indicates that it's the Cv page, even bigger faded text behind indicates the current year. It's there so it looks better.-->
+
+
+ <img class="monkaS" src="skills.jpg" alt="An image showing off skills." width="350" height="250" >
+<img class="monkaS1" src="skills1.jpg" alt="Test image xd" width="300" height="250" >
+
+<!--This is used to add images with desired position.-->
+
+<div  id="container1" style="position: absolute; top:1400px; right:800px; " >
+<p>Not long ago I have completed my Duke of Edinburgh award. I have gained various different useful skills. Ability to work in a group and use coordination to climb mountains.
+It also gave me a sight of what kind of working environment it is. I have also gained leadership skills as I was partialy allowed to lead the team.</p>
+</div>
+
+<div id="container2" style="position: absolute; top:1800px; right:800px; " >
+<p>I have been a part of the Vegas shooting charity online. It is a charity to raise money for the victims of the recent Vegas shooting in US. I have livestreamed the charity event for
+  24hrs on <a href="https://www.twitch.tv/"> Twitch.tv</a> and have raised over $700 during the charity run. From this run I have gained timekeeping, problem solving and communication skills
+  that will benefit me along the way through my career in cyber security.
+<br><br><br><br>
+</p>
+
+</div>
+<!--2 containers to store paragraphs.-->
+
+  </body>
+</html>
